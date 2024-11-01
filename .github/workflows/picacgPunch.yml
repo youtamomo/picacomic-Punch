@@ -1,10 +1,3 @@
-      
-    - name: Run
-      env:        
-        accounts: ${{secrets.ACCOUNTS}}
-      run: dotnet run -- ${accounts}
-     
-        
 name: picacg
 
 on:
@@ -14,7 +7,7 @@ on:
       - '**'
       - '!.gitignore'
       - '!README.md'
-  workflow_dispatch: # Manual trigger
+  workflow_dispatch:  # 手动触发
   schedule:
     - cron: '2 2 * * *'
 
