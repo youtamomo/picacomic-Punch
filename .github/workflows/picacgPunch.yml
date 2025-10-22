@@ -1,4 +1,6 @@
 name: picacgPunch
+permissions:
+  contents: read
 
 on:
 
